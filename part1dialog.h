@@ -1,0 +1,37 @@
+#ifndef PART1DIALOG_H
+#define PART1DIALOG_H
+
+#include <QDialog>
+
+namespace Ui {
+class Part1Dialog;
+}
+
+class Part1Dialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit Part1Dialog(QWidget *parent = 0);
+    ~Part1Dialog();
+
+private slots:
+    void on_startButton_clicked();
+
+private:
+    Ui::Part1Dialog *ui;
+
+    int a;
+    int i;
+    int j;
+    int k;
+    int m;
+
+
+    void initValues();
+    int getKBit();
+
+    int setResetKBit();
+};
+
+#endif // PART1DIALOG_H
