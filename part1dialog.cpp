@@ -23,15 +23,38 @@ void Part1Dialog::initValues(){
 
 void Part1Dialog::on_startButton_clicked(){
     initValues();
-    ui->aAfterSetK->setText(QString::number(setResetKBit()));
-    ui->k_bit->setText(QString::number(getKBit()));
 
+    ui->binaryRepresentation->setText(QString::number(a, 2));
+
+    ui->aAfterSetK->setText(QString::number(setResetBit(k)));
+    ui->k_bit->setText(QString::number(getBit(k)));
+
+    //TODO make func
+    int j_bit=getBit(j);
+    int i_bit=getBit(i);
+    int tmp = setBit(i, j_bit, a);
+    tmp=setBit(j, i_bit, tmp);
+    ui->aAfterSwap->setText(QString::number(tmp));
+
+
+    //TODO make func
+    int temp=a;
+    for (int l=0; l<m; l++){
+        temp = setBit(l, 0, temp);
+
+    }
+    ui->AAfterResetM->setText(QString::number(temp));
 }
 
-int Part1Dialog::getKBit(){
+int Part1Dialog::getBit(int k){
     return (a >> k) & 1;
 }
 
-int Part1Dialog::setResetKBit(){
+int Part1Dialog::setResetBit(int k){
     return a ^ (1 << k);
+}
+int Part1Dialog::setBit(int k, int bit, int number){
+    return bit? (number|(1 << k)) : (number&~(1 << k));
+//    int tmp = a &~(1 << k);
+//    return tmp | (1 << k);
 }

@@ -29,9 +29,11 @@ private:
 
 
     void initValues();
-    int getKBit();
+    int getBit(int k);
 
-    int setResetKBit();
+    int setResetBit(int k);
+    int setBit(int k, int bit, int number);
+
 };
 
 #endif // PART1DIALOG_H
