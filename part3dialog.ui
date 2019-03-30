@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Part1Dialog</class>
- <widget class="QDialog" name="Part1Dialog">
+ <class>Part3Dialog</class>
+ <widget class="QDialog" name="Part3Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,7 +15,7 @@
   </property>
   <layout class="QFormLayout" name="formLayout">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout_6">
+    <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -39,12 +39,15 @@
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>enter i</string>
+          <string>enter byte1</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="i_value">
+        <widget class="QLineEdit" name="byte1_value">
+         <property name="maxLength">
+          <number>1</number>
+         </property>
          <property name="placeholderText">
           <string>0</string>
          </property>
@@ -57,48 +60,15 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>enter j</string>
+          <string>enter byte2</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="j_value">
-         <property name="placeholderText">
-          <string>0</string>
+        <widget class="QLineEdit" name="byte2_value">
+         <property name="maxLength">
+          <number>1</number>
          </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item row="3" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>enter k</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="k_value">
-         <property name="placeholderText">
-          <string>0</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item row="4" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>enter m</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="m_value">
          <property name="placeholderText">
           <string>0</string>
          </property>
@@ -110,6 +80,9 @@
    </item>
    <item row="0" column="1">
     <layout class="QVBoxLayout" name="verticalLayout_6">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
@@ -139,12 +112,12 @@
           <enum>QFrame::WinPanel</enum>
          </property>
          <property name="text">
-          <string>K-th bit of A</string>
+          <string>A after swap</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="k_bit">
+        <widget class="QLabel" name="swap">
          <property name="text">
           <string/>
          </property>
@@ -160,54 +133,12 @@
           <enum>QFrame::WinPanel</enum>
          </property>
          <property name="text">
-          <string>A after (re)set k-th bit</string>
+          <string>Binary representation of A after swap</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="aAfterSetK">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QLabel" name="label_8">
-         <property name="frameShape">
-          <enum>QFrame::WinPanel</enum>
-         </property>
-         <property name="text">
-          <string>A after swap i-th and j-th bits</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="aAfterSwap">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <widget class="QLabel" name="label_10">
-         <property name="frameShape">
-          <enum>QFrame::WinPanel</enum>
-         </property>
-         <property name="text">
-          <string>A after reset m bits</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="AAfterResetM">
+        <widget class="QLabel" name="binSwap">
          <property name="text">
           <string/>
          </property>

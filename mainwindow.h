@@ -16,10 +16,17 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+
+
+    void on_actionsubPart_1_triggered();
+
+    void on_actionsubPart_2_triggered();
+
+    void on_actionsubPart_3_triggered();
 
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H

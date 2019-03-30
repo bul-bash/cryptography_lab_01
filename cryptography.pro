@@ -26,12 +26,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    part1dialog.cpp
+    part1dialog.cpp \
+    part2dialog.cpp \
+    part3dialog.cpp \
+    logic.cpp
 
 HEADERS += \
         mainwindow.h \
-    part1dialog.h
+    part1dialog.h \
+    part2dialog.h \
+    part3dialog.h \
+    logic.h
 
 FORMS += \
         mainwindow.ui \
-    part1dialog.ui
+    part1dialog.ui \
+    part2dialog.ui \
+    part3dialog.ui

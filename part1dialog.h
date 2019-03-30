@@ -29,10 +29,7 @@ private:
 
 
     void initValues();
-    int getBit(int k);
 
-    int setResetBit(int k);
-    int setBit(int k, int bit, int number);
 
 };
 

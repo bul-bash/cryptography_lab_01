@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Part1Dialog</class>
- <widget class="QDialog" name="Part1Dialog">
+ <class>Part2Dialog</class>
+ <widget class="QDialog" name="Part2Dialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,7 +15,7 @@
   </property>
   <layout class="QFormLayout" name="formLayout">
    <item row="0" column="0">
-    <layout class="QGridLayout" name="gridLayout_6">
+    <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -57,48 +57,12 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>enter j</string>
+          <string>enter len</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="j_value">
-         <property name="placeholderText">
-          <string>0</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item row="3" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>enter k</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="k_value">
-         <property name="placeholderText">
-          <string>0</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item row="4" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>enter m</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="m_value">
+        <widget class="QLineEdit" name="len_value">
          <property name="placeholderText">
           <string>0</string>
          </property>
@@ -110,6 +74,9 @@
    </item>
    <item row="0" column="1">
     <layout class="QVBoxLayout" name="verticalLayout_6">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
@@ -139,12 +106,12 @@
           <enum>QFrame::WinPanel</enum>
          </property>
          <property name="text">
-          <string>K-th bit of A</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;first i bits + last i bits&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="k_bit">
+        <widget class="QLabel" name="i_and_i_bits">
          <property name="text">
           <string/>
          </property>
@@ -160,12 +127,12 @@
           <enum>QFrame::WinPanel</enum>
          </property>
          <property name="text">
-          <string>A after (re)set k-th bit</string>
+          <string>Binary representation of glue</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="aAfterSetK">
+        <widget class="QLabel" name="binGlueBits">
          <property name="text">
           <string/>
          </property>
@@ -186,7 +153,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="aAfterSwap">
+        <widget class="QLabel" name="between_i_bits">
          <property name="text">
           <string/>
          </property>
@@ -202,12 +169,12 @@
           <enum>QFrame::WinPanel</enum>
          </property>
          <property name="text">
-          <string>A after reset m bits</string>
+          <string>Binary representation of between</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="AAfterResetM">
+        <widget class="QLabel" name="binBetweenBits">
          <property name="text">
           <string/>
          </property>

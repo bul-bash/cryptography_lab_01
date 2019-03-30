@@ -7,26 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>207</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>100</y>
-      <width>88</width>
-      <height>33</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Use menu actions</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -46,10 +45,9 @@
     <property name="title">
      <string>Part 1</string>
     </property>
-    <addaction name="actionk_th_bit"/>
-    <addaction name="actionset_k_th_bit"/>
-    <addaction name="actionswap_i_th_and_j_th_bits"/>
-    <addaction name="actionset_to_zero_m_bits"/>
+    <addaction name="actionsubPart_1"/>
+    <addaction name="actionsubPart_2"/>
+    <addaction name="actionsubPart_3"/>
    </widget>
    <widget class="QMenu" name="menuPart_2">
     <property name="title">
@@ -75,9 +73,20 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
   <action name="actionk_th_bit">
    <property name="text">
-    <string>show k-th bit</string>
+    <string>subPart1</string>
    </property>
   </action>
   <action name="actionset_k_th_bit">
@@ -93,6 +102,21 @@
   <action name="actionset_to_zero_m_bits">
    <property name="text">
     <string>set to zero m bits</string>
+   </property>
+  </action>
+  <action name="actionsubPart_1">
+   <property name="text">
+    <string>subPart 1</string>
+   </property>
+  </action>
+  <action name="actionsubPart_2">
+   <property name="text">
+    <string>subPart 2</string>
+   </property>
+  </action>
+  <action name="actionsubPart_3">
+   <property name="text">
+    <string>subPart 3</string>
    </property>
   </action>
  </widget>
